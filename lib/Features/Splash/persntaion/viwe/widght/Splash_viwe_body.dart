@@ -1,3 +1,4 @@
+import 'package:bookly_app/Core/utlis/assets.dart';
 import 'package:flutter/material.dart';
 
 class SplashViweBody extends StatelessWidget {
@@ -5,6 +6,17 @@ class SplashViweBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Image.asset(Assetsdata.logo),
+        const Text(
+          "Read Free Books",
+          style: TextStyle(fontSize: 30),
+          textAlign: TextAlign.center,
+        ),
+      ],
+    );
   }
 }
