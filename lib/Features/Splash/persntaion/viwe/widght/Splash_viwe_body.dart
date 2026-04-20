@@ -1,8 +1,37 @@
 import 'package:bookly_app/Core/utlis/assets.dart';
+import 'package:bookly_app/Features/Splash/persntaion/viwe/widght/Sliding_text.dart';
 import 'package:flutter/material.dart';
 
-class SplashViweBody extends StatelessWidget {
+class SplashViweBody extends StatefulWidget {
   const SplashViweBody({super.key});
+
+  @override
+  State<SplashViweBody> createState() => _SplashViweBodyState();
+}
+
+class _SplashViweBodyState extends State<SplashViweBody>
+    with TickerProviderStateMixin {
+  late AnimationController animationController;
+  late Animation<Offset> SlidingAnimation;
+  @override
+  void initState() {
+    super.initState();
+    animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 1),
+    );
+    SlidingAnimation = Tween<Offset>(
+      begin: Offset(0, 2),
+      end: Offset.zero,
+    ).animate(animationController);
+    animationController.forward();
+  }
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +40,7 @@ class SplashViweBody extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset(Assetsdata.logo),
-        const Text(
-          "Read Free Books",
-          style: TextStyle(fontSize: 30),
-          textAlign: TextAlign.center,
-        ),
+        SlideText(SlidingAnimation: SlidingAnimation),
       ],
     );
   }
