@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/Home_viwe_bode.dart';
 import 'package:flutter/material.dart';
 
 class HomeViwe extends StatelessWidget {
@@ -5,6 +6,6 @@ class HomeViwe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold(body: HomeViweBode());
   }
 }

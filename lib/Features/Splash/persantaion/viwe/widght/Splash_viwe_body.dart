@@ -1,6 +1,6 @@
 import 'package:bookly_app/Core/utlis/assets.dart';
 import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Home_viwe.dart';
-import 'package:bookly_app/Features/Splash/persntaion/viwe/widght/Sliding_text.dart';
+import 'package:bookly_app/Features/Splash/persantaion/viwe/widght/Sliding_text.dart';
 import 'package:bookly_app/constns.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

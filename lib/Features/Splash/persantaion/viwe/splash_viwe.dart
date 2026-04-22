@@ -1,4 +1,4 @@
-import 'package:bookly_app/Features/Splash/persntaion/viwe/widght/Splash_viwe_body.dart';
+import 'package:bookly_app/Features/Splash/persantaion/viwe/widght/Splash_viwe_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashViwe extends StatelessWidget {

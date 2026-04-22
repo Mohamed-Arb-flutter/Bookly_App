@@ -1,4 +1,4 @@
-import 'package:bookly_app/Features/Splash/persntaion/viwe/splash_viwe.dart';
+import 'package:bookly_app/Features/Splash/persantaion/viwe/splash_viwe.dart';
 import 'package:bookly_app/constns.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
