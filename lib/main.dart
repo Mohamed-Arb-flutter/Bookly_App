@@ -1,7 +1,8 @@
-import 'package:bookly_app/Features/Splash/persantaion/viwe/splash_viwe.dart';
+import 'package:bookly_app/Core/utlis/App_Router.dart';
+
 import 'package:bookly_app/constns.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -13,9 +14,9 @@ class BooklyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: const SplashViwe(),
+      routerConfig: AppRouter.router,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: KprimryColor,
         textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),

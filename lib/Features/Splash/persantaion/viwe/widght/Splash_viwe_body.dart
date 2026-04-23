@@ -1,9 +1,10 @@
 import 'package:bookly_app/Core/utlis/assets.dart';
-import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Home_viwe.dart';
+
 import 'package:bookly_app/Features/Splash/persantaion/viwe/widght/Sliding_text.dart';
-import 'package:bookly_app/constns.dart';
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
+import 'package:go_router/go_router.dart';
 
 class SplashViweBody extends StatefulWidget {
   const SplashViweBody({super.key});
@@ -23,7 +24,6 @@ class _SplashViweBodyState extends State<SplashViweBody>
     navigateToHome();
   }
 
- 
   void anmithon() {
     animationController = AnimationController(
       vsync: this,
@@ -53,14 +53,15 @@ class _SplashViweBodyState extends State<SplashViweBody>
       ],
     );
   }
-   void navigateToHome() {
-     Future.delayed(Duration(seconds: 2), () {
-      Get.to(
-        () => const HomeViwe(),
-        transition: Transition.fade,
-        duration: KTranzationDuration,
-      );
+
+  void navigateToHome() {
+    Future.delayed(Duration(seconds: 2), () {
+      // Get.to(
+      //   () => const HomeViwe(),
+      //   transition: Transition.fade,
+      //   duration: KTranzationDuration,
+      // );
+      GoRouter.of(context).push('/Homeviwe');
     });
   }
-
 }
