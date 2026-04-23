@@ -1,4 +1,3 @@
-
 import 'package:bookly_app/Core/utlis/assets.dart';
 import 'package:flutter/material.dart';
 
@@ -7,17 +6,14 @@ class CustomlistViweItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.3,
-      child: AspectRatio(
-        aspectRatio: 2.7 / 4,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            image: DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(Assetsdata.test),
-            ),
+    return AspectRatio(
+      aspectRatio: 2.7 / 4,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(16),
+          image: DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(Assetsdata.test),
           ),
         ),
       ),
