@@ -1,4 +1,3 @@
-
 import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/Custom_list_viwe_item.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,7 @@ class Futurelistviwebook extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.only(left: 8),
             child: CustomlistViweItem(),
           );
         },
