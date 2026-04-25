@@ -4,6 +4,7 @@ import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/Book_Rat
 
 import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/Custom_dateails_appbar.dart';
 import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/Custom_list_viwe_item.dart';
+import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/Similer_books_list_view.dart';
 import 'package:flutter/material.dart';
 
 class BookTedailsViweBody extends StatelessWidget {
@@ -41,6 +42,17 @@ class BookTedailsViweBody extends StatelessWidget {
           bookrate(mainAxisAlignment: MainAxisAlignment.center),
           const SizedBox(height: 37),
           const BooksActhion(),
+          SizedBox(height: 35),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You Can also like',
+
+              style: Styles.textstyle14.copyWith(fontWeight: FontWeight.w600),
+            ),
+          ),
+          const SizedBox(height: 10),
+          const SimilerBookslistviwe(),
         ],
       ),
     );
