@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 
 class CustomdateilsAppbar extends StatelessWidget {
   const CustomdateilsAppbar({super.key});
@@ -11,7 +10,9 @@ class CustomdateilsAppbar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).pop();
+          },
           icon: Icon(Icons.close, size: 30, color: Colors.white),
         ),
         IconButton(
