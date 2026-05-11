@@ -1,4 +1,3 @@
-
 import 'package:bookly_app/Features/Home/data/persantaion/Viwes/Widgets/best_seller_list_viwe_item.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +16,7 @@ class Bestselerlistviwe extends StatelessWidget {
     );
   }
 }
+
 // ListView.builder(
 //       shrinkWrap: true,
 //       physics: const NeverScrollableScrollPhysics(),
